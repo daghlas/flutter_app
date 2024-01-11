@@ -15,18 +15,34 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('my first flutter app'),
         centerTitle: true,
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.blue[600],
+        foregroundColor: Colors.white,
       ),
       body: Center(
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.lightBlue,
-          size: 50.0,
+        child: ElevatedButton.icon(
+          onPressed: (){
+            print('!!! BUTTON CLICKED !!!');
+          },
+          icon: Icon(
+            Icons.home,
+            color: Colors.white,
+            size: 20.0,
+          ),
+          label: Text('Elevated Button'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue, //changes button color
+            foregroundColor: Colors.white, // changes text color
+            textStyle: TextStyle(
+              fontSize: 16.0,
+              fontWeight: FontWeight.bold,
+            )
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.blue[600],
+        foregroundColor: Colors.white,
         child: Text('click'),
       ),
     );
