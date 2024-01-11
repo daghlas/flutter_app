@@ -18,15 +18,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text(
-          'Hello world, welcome Daghlas',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: 'IndieFlower',
-          ),
+        child: Image(
+          image: NetworkImage('https://i.pinimg.com/564x/9b/fe/27/9bfe27ede0286b73df69d91592d35130.jpg'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
