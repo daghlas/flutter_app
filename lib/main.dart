@@ -20,6 +20,7 @@ class Home extends StatelessWidget {
       ),
       body: Container(
         color: Colors.grey[600],
+        padding: EdgeInsets.all(20.0),
         child: Text('Hello'),
       ),
       floatingActionButton: FloatingActionButton(
