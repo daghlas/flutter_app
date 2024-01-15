@@ -18,26 +18,9 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue[600],
         foregroundColor: Colors.white,
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: (){
-            print('!!! BUTTON CLICKED !!!');
-          },
-          icon: Icon(
-            Icons.home,
-            color: Colors.white,
-            size: 20.0,
-          ),
-          label: Text('Elevated Button'),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.blue, //changes button color
-            foregroundColor: Colors.white, // changes text color
-            textStyle: TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
-            )
-          ),
-        ),
+      body: Container(
+        color: Colors.grey[600],
+        child: Text('Hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
