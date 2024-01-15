@@ -40,7 +40,9 @@ class Home extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        onPressed: () {
+          print('!!! FAB BUTTON CLICKED !!!');
+        },
         backgroundColor: Colors.blue[600],
         foregroundColor: Colors.white,
         child: Text('click'),
