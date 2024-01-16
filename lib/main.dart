@@ -22,6 +22,13 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const <Widget>[
+              Text('This is a flutter row'),
+              Text(' with a text in it'),
+            ],
+          ),
           Container(
             padding: EdgeInsets.all(30.0),
             color: Colors.cyan,
@@ -30,12 +37,12 @@ class Home extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(30.0),
             color: Colors.pinkAccent,
-            child: Text('Hello world'),
+            child: Text('Daghlas'),
           ),
           Container(
             padding: EdgeInsets.all(30.0),
             color: Colors.amber,
-            child: Text('Hello world'),
+            child: Text('welcome to flutter'),
           ),
         ],
       ),
