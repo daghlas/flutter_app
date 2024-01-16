@@ -19,6 +19,7 @@ class Home extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
             padding: EdgeInsets.all(30.0),
