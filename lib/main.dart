@@ -18,9 +18,22 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue[600],
         foregroundColor: Colors.white,
       ),
-      body: Padding(
-        padding: EdgeInsets.all(30.0),
-        child: Text('Hello'),
+      body: Row(
+        children: <Widget>[
+          Text('Hello world'),
+          ElevatedButton(
+            onPressed: (){},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.amber,
+            ),
+            child: Text('welcome Daghlas'),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.fromLTRB(30.0, 30.0, 30.0, 30.0),
+            child: Text('inside container'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
