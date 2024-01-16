@@ -36,13 +36,13 @@ class Home extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.all(30.0),
-            color: Colors.pinkAccent,
-            child: Text('Daghlas'),
+            color: Colors.amber,
+            child: Text('welcome to flutter'),
           ),
           Container(
             padding: EdgeInsets.all(30.0),
-            color: Colors.amber,
-            child: Text('welcome to flutter'),
+            color: Colors.pinkAccent,
+            child: Text('Daghlas'),
           ),
         ],
       ),
