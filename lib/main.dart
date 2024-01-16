@@ -22,15 +22,26 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const <Widget>[
-                Text('This is a flutter row'),
-                Text(' with a text in it'),
-              ],
-            ),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(10.0),
+                  color: Colors.red,
+                  child: Text('red text area'),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(10.0),
+                color: Colors.orange,
+                child: Text('orange text area'),
+              ),
+              Container(
+                padding: EdgeInsets.all(10.0),
+                color: Colors.green,
+                child: Text('green text area'),
+              ),
+            ],
           ),
           Container(
             padding: EdgeInsets.all(30.0),
