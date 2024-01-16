@@ -22,12 +22,15 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
-              Text('This is a flutter row'),
-              Text(' with a text in it'),
-            ],
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const <Widget>[
+                Text('This is a flutter row'),
+                Text(' with a text in it'),
+              ],
+            ),
           ),
           Container(
             padding: EdgeInsets.all(30.0),
