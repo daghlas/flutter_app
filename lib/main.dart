@@ -19,6 +19,7 @@ class Home extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Text('Hello world'),
           ElevatedButton(
