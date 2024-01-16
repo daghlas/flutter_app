@@ -31,15 +31,19 @@ class Home extends StatelessWidget {
                   child: Text('red text area'),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.orange,
-                child: Text('orange text area'),
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(10.0),
+                  color: Colors.orange,
+                  child: Text('orange text area'),
+                ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.green,
-                child: Text('green text area'),
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(10.0),
+                  color: Colors.green,
+                  child: Text('green text area'),
+                ),
               ),
             ],
           ),
